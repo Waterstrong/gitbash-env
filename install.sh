@@ -1,12 +1,11 @@
-#!/bin/bin
+#!/bin/sh
 
-boot_script="export SCRIPT_HOME=$PWD;source $PWD/boot/load_config.sh"
-bash_profile=~/.bash_profile
+source ./uninstall.sh
 
-if [ -e ${bash_profile} ] && grep -iq "${boot_script}" ${bash_profile}; then
+if [ -e ${BASH_PROFILE} ] && grep -iq "${BOOT_SCRIPT}" "${BASH_PROFILE}"; then
     echo '> The script already installed. Skipped...'
 else
-    echo "${boot_script}" >> ${bash_profile}
+    echo "${BOOT_SCRIPT}" >> "${BASH_PROFILE}"
     echo '> The script installed successfully!'
 fi
 
@@ -18,5 +17,5 @@ else
     echo '> The home.yml file already exists, nothing changed.'
 fi
 
-source ${bash_profile}
+source ${BASH_PROFILE}
 echo '> Refreshed the bash profile successfully!'
