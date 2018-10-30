@@ -57,7 +57,7 @@ glog   # git log --oneline --decorate --color --graph
 ```
 <project|stash>    # Goto the Project folder
 <project|stash> list    # list all cloned projects
-script    # Go into the bashnator folder
+script    # Go into the shall folder
 script usage     # Goto the shall usage page
 
 # Goto specific project by typing the project name, press tab for complement
