@@ -8,3 +8,6 @@ app-demo2:
   java: 6
   build: ./gradlew clean build
   run: ./gradlew clean xxRun
+  buildx: ./gradlew clean build -x :app-demo2-smoke:test
+  opts: java_utf8;java_opts
+  alias: demo
