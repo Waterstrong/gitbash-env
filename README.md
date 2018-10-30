@@ -1,2 +1,2 @@
-# gitbash-env
-Git Bash environment auto setup
+# shall
+Shell(Bash/Zsh) for all on Mac and Windows! - sh all.
